@@ -1,0 +1,35 @@
+/* USER CODE BEGIN Includes */
+#include "detection.h"
+/* USER CODE END Includes */
+
+  /* USER CODE BEGIN 2 */
+  printf("*************************************\r\n");
+  printf("Timestamped event detection version 1\r\n");
+  printf("*************************************\r\n");
+  /* USER CODE END 2 */
+  
+  
+    /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+	ProcessEventDetection();
+    /* USER CODE END WHILE */
+
+================================================
+FW Update
+================================================
+
+/* USER CODE BEGIN Includes */
+#include "detection.h"
+#include "update_fw.h"
+/* USER CODE END Includes */
+
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+	ProcessEventDetection();
+	CheckUpdateRequest();
+    /* USER CODE END WHILE */
+	
+	
+
